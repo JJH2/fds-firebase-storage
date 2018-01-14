@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <button class="login">로그인</button>
+    <input type="file" class="file-input">
+    <button class="prev-botton">이전 페이지</button>
+    <button class="next-botton">다음 페이지</button>
+    <ul class="image"></ul>
+    
+    <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDRMHeIHekXrZOi7FNr3v7fPIHVY8jF3oI",
+            authDomain: "fastcampus-storage.firebaseapp.com",
+            databaseURL: "https://fastcampus-storage.firebaseio.com",
+            projectId: "fastcampus-storage",
+            storageBucket: "fastcampus-storage.appspot.com",
+            messagingSenderId: "603704861237"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script src="./index.js"></script>
+</body>
+</html>
